@@ -49,13 +49,15 @@ export default function ActivityCard({
 
   return (
     <div className={styles.container}>
-      <div className={`${styles.iconContainer} ${styles[normalizedTitle]}`}>
-        <img
-          src={iconMap[title]}
-          alt='Icon'
-          className={styles.icon}
-          aria-hidden='true'
-        />
+      <div className={`${styles.coloredBackground} ${styles[normalizedTitle]}`}>
+        <div className={styles.iconContainer}>
+          <img
+            src={iconMap[title]}
+            alt='Icon'
+            className={styles.icon}
+            aria-hidden='true'
+          />
+        </div>
       </div>
       <div className={styles.content}>
         <div className={styles.header}>
