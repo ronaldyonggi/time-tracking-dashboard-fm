@@ -1,0 +1,74 @@
+.container {
+  margin: 1rem;
+}
+
+
+.iconContainer {
+  border-radius: 15px;
+}
+
+.icon {
+  width: 4rem;
+}
+
+.content {
+  background-color: var(--color-dark-blue);
+  border-radius: 15px;
+  transition: background-color 0.2s ease;
+  padding: 1rem;
+}
+
+.content:hover {
+  background-color: var(--color-desaturated-blue);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hours {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.previous {
+  color: var(--color-pale-blue);
+  font-size: 0.8rem;
+}
+
+.work {
+  background-color: var(--color-light-red-work);
+}
+
+.play {
+  background-color: var(--color-soft-blue-play);
+}
+
+.study {
+  background-color: var(--color-light-red-study);
+}
+
+.exercise {
+  background-color: var(--color-lime-green-exercise);
+}
+
+.social {
+  background-color: var(--color-violet-social);
+}
+
+.selfcare {
+  background-color: var(--color-soft-orange-self-care);
+}
