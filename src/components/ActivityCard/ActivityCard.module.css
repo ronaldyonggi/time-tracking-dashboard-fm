@@ -3,8 +3,19 @@
 }
 
 
+.coloredBackground {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+  height: 2.5rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
 .iconContainer {
-  border-radius: 15px;
+  position: absolute;
+  top: -0.5rem;
+  right: 1rem;
 }
 
 .icon {
@@ -13,9 +24,12 @@
 
 .content {
   background-color: var(--color-dark-blue);
-  border-radius: 15px;
+  border-radius: 12px;
   transition: background-color 0.2s ease;
   padding: 1rem;
+  position: relative;
+  z-index: 2;
+  top: -0.5rem;
 }
 
 .content:hover {
