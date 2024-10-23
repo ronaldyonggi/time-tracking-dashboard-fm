@@ -1,0 +1,56 @@
+.container {
+  border-radius: 15px;
+  background-color: var(--color-dark-blue);
+  margin: 1rem;
+  overflow: hidden;
+}
+
+.profileInfo {
+  background-color: var(--color-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-radius: 15px;
+}
+
+.imageContainer {
+  width: 4rem;
+  margin-right: 0.8rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 100%;
+  border: 3px solid white;
+}
+
+.reportFor {
+  color: var(--color-pale-blue);
+  font-size: 0.8rem;
+}
+
+.name {
+  color: var(--color-white);
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+.timeframeSelector {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.timeframe {
+  border: none;
+  background: none;
+  color: var(--color-desaturated-blue);
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.timeframe:hover, .activeTimeframe {
+  color: var(--color-white);
+}
