@@ -1,12 +1,17 @@
 import './styles/reset.css';
 import './styles/global.css';
 
+import data from '../data.json';
+
 import { createRoot } from 'react-dom/client';
-import ProfileCard from './components/ProfileCard/ProfileCard';
-import ActivityCard from './components/ActivityCard/ActivityCard';
+import Dashboard from './components/Dashboard/Dashboard';
 
 export function App() {
-  return <ActivityCard title='Work' timeframe='Daily' current={5} previous={7} />;
+  return (
+    <main>
+      <Dashboard data={data} />
+    </main>
+  );
 }
 
 createRoot(document.getElementById('root')!).render(<App />);
