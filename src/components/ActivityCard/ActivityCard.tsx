@@ -6,10 +6,11 @@ import studyIcon from '../../assets/images/icon-study.svg';
 import exerciseIcon from '../../assets/images/icon-exercise.svg';
 import socialIcon from '../../assets/images/icon-social.svg';
 import selfCareIcon from '../../assets/images/icon-self-care.svg';
+import { Timeframe } from '../../types';
 
 interface ActivityCardProps {
   title: string;
-  timeframe: 'Daily' | 'Weekly' | 'Monthly';
+  timeframe: Timeframe
   current: number;
   previous: number;
 }
@@ -34,13 +35,13 @@ export default function ActivityCard({
   const normalizedTitle = title.toLowerCase().replace(' ', '');
 
   switch (timeframe) {
-    case 'Daily':
+    case 'daily':
       previousTimeframe = 'Yesterday';
       break;
-    case 'Weekly':
+    case 'weekly':
       previousTimeframe = 'Last Week';
       break;
-    case 'Monthly':
+    case 'monthly':
       previousTimeframe = 'Last Month';
       break;
     default:
