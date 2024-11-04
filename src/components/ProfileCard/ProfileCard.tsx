@@ -1,9 +1,21 @@
 import avatarJeremy from '../../assets/images/image-jeremy.png';
+import { Timeframe } from '../../types';
 import styles from './ProfileCard.module.css';
 
-const timeframes = ['Daily', 'Weekly', 'Monthly'];
+const timeframes: Timeframe[] = ['daily', 'weekly', 'monthly'];
 
-export default function ProfileCard({ selectedTimeframe }) {
+interface ProfileCardProps {
+  timeframe: Timeframe;
+  setTimeFrame: (timeframe: Timeframe) => void;
+}
+
+export default function ProfileCard({
+  timeframe,
+  setTimeFrame,
+}: ProfileCardProps) {
+  const handleClick = (timeframe: Timeframe) => {
+    setTimeFrame(timeframe);
+  };
   return (
     <div className={styles.container}>
       <div className={styles.profileInfo}>
@@ -24,8 +36,9 @@ export default function ProfileCard({ selectedTimeframe }) {
           <button
             key={index}
             className={`${styles.timeframe} ${
-              selectedTimeframe === t ? styles.activeTimeframe : ''
+              timeframe === t ? styles.activeTimeframe : ''
             }`}
+            onClick={() => handleClick(t)}
           >
             {t}
           </button>
