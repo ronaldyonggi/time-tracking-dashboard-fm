@@ -51,6 +51,11 @@
   font-size: 0.9rem;
 }
 
-.timeframe:hover, .activeTimeframe {
+.timeframe::first-letter {
+  text-transform: uppercase;
+}
+
+.timeframe:hover,
+.activeTimeframe {
   color: var(--color-white);
 }
