@@ -24,9 +24,9 @@ export default function Dashboard({ data }: DashboardProps) {
             timeframe={selectedTimeframe}
             current={d.timeframes[selectedTimeframe].current}
             previous={d.timeframes[selectedTimeframe].previous}
+            className={styles[`activityCard${index + 1}`]}
           />
         ))}
-      </div>
     </div>
   );
 }
