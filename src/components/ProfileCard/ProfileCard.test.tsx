@@ -32,7 +32,7 @@ describe('ProfileCard', () => {
       <ProfileCard timeframe='daily' setTimeFrame={setTimeFrame} />
     );
     const avatar = getByAltText('Avatar of Jeremy');
-    expect(avatar.src).toContain('image-jeremy.png');
+    expect(avatar.getAttribute('src')).toContain('image-jeremy.png');
     const name = getByText('Jeremy Robson');
     expect(name.className).toContain('name');
   });
