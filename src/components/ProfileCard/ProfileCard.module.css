@@ -59,3 +59,34 @@
 .activeTimeframe {
   color: var(--color-white);
 }
+
+@media screen and (min-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profileInfo {
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 2rem;
+  }
+
+  .reportFor {
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+
+  .name {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.2rem;
+  }
+
+  .timeframeSelector {
+    flex-direction: column;
+    align-items: baseline;
+    line-height: 1.7rem;
+  }
+}
