@@ -2,7 +2,6 @@
   margin: 1rem;
 }
 
-
 .coloredBackground {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -85,4 +84,15 @@
 
 .selfcare {
   background-color: var(--color-soft-orange-self-care);
+}
+
+@media screen and (min-width: 900px) {
+  .stats {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .hours {
+    font-size: 3rem;
+  }
 }
