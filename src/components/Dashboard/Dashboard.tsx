@@ -11,12 +11,12 @@ export default function Dashboard({ data }: DashboardProps) {
   const [selectedTimeframe, setSelectedTimeframe] =
     useState<Timeframe>('daily');
   return (
-    <div>
-      <ProfileCard
-        timeframe={selectedTimeframe}
-        setTimeFrame={setSelectedTimeframe}
-      />
-      <div>
+      <div className={styles.profileCardWrapper}>
+        <ProfileCard
+          timeframe={selectedTimeframe}
+          setTimeFrame={setSelectedTimeframe}
+        />
+      </div>
         {data.map((d, index) => (
           <ActivityCard
             key={index}
