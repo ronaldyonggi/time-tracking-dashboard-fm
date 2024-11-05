@@ -13,6 +13,7 @@ interface ActivityCardProps {
   timeframe: Timeframe
   current: number;
   previous: number;
+  className: string;
 }
 
 export default function ActivityCard({
@@ -20,6 +21,7 @@ export default function ActivityCard({
   timeframe,
   current,
   previous,
+  className,
 }: ActivityCardProps) {
   let previousTimeframe = '';
 
@@ -49,7 +51,7 @@ export default function ActivityCard({
   }
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${className}`}>
       <div className={`${styles.coloredBackground} ${styles[normalizedTitle]}`}>
         <div className={styles.iconContainer}>
           <img
