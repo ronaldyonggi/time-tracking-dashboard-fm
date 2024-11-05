@@ -2,8 +2,17 @@
 @import url('./variables.css');
 
 body {
-    font-family: var(--font-family);
-    font-size: var(--font-size-body);
-    background-color: var(--color-very-dark-blue);
-    color: var(--color-white);
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  background-color: var(--color-very-dark-blue);
+  color: var(--color-white);
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
